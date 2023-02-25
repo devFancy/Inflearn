@@ -6,7 +6,7 @@
 
 * Project: **`Gradle - Groovy`** Project
 
-* Spring Boot: 2.4.1
+* Spring Boot: 2.7.8
 
 * Packaging: Jar
 
