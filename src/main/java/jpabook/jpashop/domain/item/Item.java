@@ -1,6 +1,7 @@
 package jpabook.jpashop.domain.item;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -11,8 +12,10 @@ import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 
 import jpabook.jpashop.domain.Category;
+import jpabook.jpashop.domain.OrderItem;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -33,4 +36,14 @@ public abstract class Item {
 
     @ManyToMany(mappedBy = "items")
     private List<Category> categories = new ArrayList<>();
+    @OneToMany(mappedBy = "item")
+    private Collection<OrderItem> orderItem;
+
+    public Collection<OrderItem> getOrderItem() {
+        return orderItem;
+    }
+
+    public void setOrderItem(Collection<OrderItem> orderItem) {
+        this.orderItem = orderItem;
+    }
 }
