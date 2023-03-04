@@ -1,6 +1,6 @@
 ## Goal
 
-* 예제 애플리케이션을 직접 코드로 개발하는 과정 속에서 **스프링의 핵심 원리**를 깊이 있고 자연스럽게 이해한다.
+* 예제 애플리케이션을 직접 코드로 개발하는 과정 속에서 **스프링의 핵심 원리**를 깊이있고 자연스럽게 이해한다.
 
 ## Spec
 
@@ -18,7 +18,7 @@
 
 ## Reference
 
-[스프링 핵심 원리 - 기본편](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8/) 강의를 들으며 정리한 내용을 토대로 블로그에 정리하였습니다.
+[스프링 핵심 원리 - 기본편](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8/) 강의를 들으며 정리한 내용을 블로그에 작성하였습니다.
 
 * [객체 지향 설계와 스프링](https://fancy96.github.io/Spring-Core-Principle-1/)
 
