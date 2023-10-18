@@ -11,6 +11,7 @@ import javax.validation.constraints.NotEmpty;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -28,6 +29,7 @@ public class Member {
     @Embedded
     private Address address;
 
+    @JsonIgnore // 해당 필드값을 제외시킬 수 있음.
     @OneToMany(mappedBy = "member")
     private List<Order> orders = new ArrayList<>();
 }
