@@ -23,6 +23,7 @@ import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor;
 
 @Entity
 @Table(name = "orders")
@@ -38,6 +39,7 @@ public class Order {
     @JoinColumn(name = "member_id")
     private Member member;
 
+    // 일대다인 경우 기본이 LAZY이 때문에 따로 세팅을 하지 않았음
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
     private List<OrderItem> orderItems = new ArrayList<>();
 
