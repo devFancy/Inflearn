@@ -23,7 +23,7 @@ public class ConnectionTest {
 
     @Test
     void dataSourceConnectionPool() throws SQLException, InterruptedException {
-        // 커넥션 풀링
+        // 커넥션 풀링: HikariProxyConnection(Proxy) -> JdbcConnection(Target)
         HikariDataSource dataSource = new HikariDataSource(); // 스프링에서 jdbc를 사용하면 자동으로 import 됨
         dataSource.setJdbcUrl(URL);
         dataSource.setUsername(USERNAME);
