@@ -6,6 +6,9 @@ import lombok.RequiredArgsConstructor;
 
 import java.sql.SQLException;
 
+/**
+ * 트랜잭션 없이 단순 계좌이체 비즈니스 로직 구현
+ */
 @RequiredArgsConstructor
 public class MemberServiceV1 {
     
